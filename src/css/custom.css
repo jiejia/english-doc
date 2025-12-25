@@ -37,14 +37,34 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Global Navbar Styling to match glassy aesthetic */
-.navbar {
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.9);
+/* Global Navbar Styling - Glassy aesthetic ONLY for Desktop */
+@media (min-width: 997px) {
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  [data-theme='dark'] .navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 
-[data-theme='dark'] .navbar {
-  background-color: rgba(0, 0, 0, 0.85);
+/* Mobile Navbar - Ensure solid background and visibility */
+@media (max-width: 996px) {
+  .navbar {
+    background-color: var(--ifm-navbar-background-color) !important;
+    backdrop-filter: none;
+  }
+}
+
+/* Mobile Sidebar - Ensure solid background for readability */
+.navbar-sidebar {
+  background-color: var(--ifm-background-surface-color) !important;
+  backdrop-filter: none !important;
+}
+
+.navbar-sidebar__backdrop {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* Typography refinements */
