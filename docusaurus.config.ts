@@ -87,6 +87,12 @@ const config: Config = {
           position: 'left',
           label: '2025年社群回放录像总结',
         },
+        {
+          type: 'doc',
+          docId: '2026年社群回放录像总结/英语学习方法汇总',
+          position: 'left',
+          label: '2026年社群回放录像总结',
+        },
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',

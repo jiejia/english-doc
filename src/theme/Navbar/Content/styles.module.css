@@ -1,0 +1,20 @@
+/*
+Override Docusaurus default behavior:
+the classic theme hides the color mode toggle on small viewports.
+
+Requirement: keep the light/dark toggle always visible in the top-right,
+including on mobile browsers.
+*/
+
+.colorModeToggle {
+  display: flex;
+}
+
+/*
+Restore some Infima style that broke with CSS Cascade Layers
+See https://github.com/facebook/docusaurus/pull/11142
+*/
+:global(.navbar__items--right) > :last-child {
+  padding-right: 0;
+}
+

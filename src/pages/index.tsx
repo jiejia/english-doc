@@ -16,7 +16,7 @@ function HomepageHeader() {
     <header className={styles.heroBanner}>
       <div className={styles.container}>
         <div className={clsx(styles.heroContent, styles.animateFadeIn)} style={{ animationDelay: '0.1s' }}>
-          <div className={styles.heroBadge}>✨ 2025 全新升级</div>
+          <div className={styles.heroBadge}>✨ 2026 全新升级</div>
           <Heading as="h1" className={styles.heroTitle}>
             {siteConfig.title}
           </Heading>
@@ -27,7 +27,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className={styles.primaryButton}
-              to="/docs/2025年社群回放录像总结/2025.1.4-week1-简单入门英文读物注意事项">
+              to="/docs/2026年社群回放录像总结/英语学习方法汇总">
               开始探索旅程 →
             </Link>
           </div>
